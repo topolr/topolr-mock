@@ -1,0 +1,20 @@
+{
+  "name": "topolr-mock",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "mock",
+    "yaml"
+  ],
+  "author": "hou80houzhu",
+  "contributors": [],
+  "dependencies": {
+    "topolr-router": "^0.0.1",
+    "topolr-util": "^0.1.10",
+    "yamljs": "^0.2.8"
+  },
+  "devDependencies": {}
+}
