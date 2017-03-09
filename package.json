@@ -1,6 +1,6 @@
 {
   "name": "topolr-mock",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "service side mock module of topolr",
   "main": "main.js",
   "scripts": {
