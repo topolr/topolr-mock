@@ -1,20 +1,35 @@
 {
   "name": "topolr-mock",
   "version": "0.1.0",
+  "description": "service side mock module of topolr",
   "main": "main.js",
   "scripts": {
     "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/topolr/topolr-mock.git"
   },
   "keywords": [
     "mock",
     "yaml"
   ],
-  "author": "hou80houzhu",
+  "author": {
+    "name": "WangJinliang(hou80houzhu)",
+    "email": "hou80houzhu@vip.qq.com"
+  },
+  "bugs": {
+    "url": "https://github.com/topolr/topolr-mock/issues"
+  },
+  "homepage": "http://topolr.org/",
   "contributors": [],
   "dependencies": {
-    "topolr-router": "^0.0.1",
-    "topolr-util": "^0.1.10",
+    "topolr-router": "^1.0.0",
+    "topolr-util": "^1.0.0",
     "yamljs": "^0.2.8"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "license": {
+    "type": "MIT"
+  }
 }
