@@ -2,15 +2,19 @@ var topolr=require("topolr-util");
 var util=require("./../util/util");
 var container=require("./parserContainer");
 var transfn=function(fnstr){
-	var a=fnstr.trim().split(/\(|\)/),key=a[0],parameters="";
-	if(a.length>=3){
-		parameters=a[1];
-	}
-	var parser=container.get(key,1);
-	if(parser){
-		return parser.apply({},parameters.split(","));
-	}else{
-		return fnstr;
+    if((fnstr+"").indexOf("(")!==-1) {
+        var a = fnstr.trim().split(/\(|\)/), key = a[0], parameters = "";
+        if (a.length >= 3) {
+            parameters = a[1];
+        }
+        var parser = container.get(key, 1);
+        if (parser) {
+            return parser.apply({}, parameters.split(","));
+        } else {
+            return fnstr;
+        }
+    }else{
+    	return fnstr;
 	}
 };
 var scanArray=function(array){
